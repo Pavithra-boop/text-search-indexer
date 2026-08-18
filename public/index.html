@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Search Indexer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <header>
+            <h1>Text Search Indexer</h1>
+            <p>Run all five JavaScript problems from one input.</p>
+        </header>
+
+        <section class="card">
+            <label for="textInput">Input Text</label>
+            <textarea id="textInput" placeholder="Paste your sentences here..."></textarea>
+
+            <label for="queryInput">Search Word(s)</label>
+            <input id="queryInput" type="text" placeholder="Example: javascript python">
+
+            <button id="runButton">RUN ALL FIVE PROBLEMS</button>
+            <div id="status"></div>
+        </section>
+
+        <section id="results" class="results hidden">
+            <article class="result-card">
+                <h2>Problem 1 — Tokenization</h2>
+                <pre id="p1Output"></pre>
+            </article>
+
+            <article class="result-card">
+                <h2>Problem 2 — Inverted Index</h2>
+                <pre id="p2Output"></pre>
+            </article>
+
+            <article class="result-card">
+                <h2>Problem 3 — Single Word Search</h2>
+                <pre id="p3Output"></pre>
+            </article>
+
+            <article class="result-card">
+                <h2>Problem 4 — Multiple Word AND Search</h2>
+                <pre id="p4Output"></pre>
+            </article>
+
+            <article class="result-card">
+                <h2>Problem 5 — Word Frequency Count</h2>
+                <pre id="p5Output"></pre>
+            </article>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
